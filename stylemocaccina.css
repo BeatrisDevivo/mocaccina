@@ -1,0 +1,376 @@
+/* stylemocaccina.css */
+
+
+html {
+    scroll-behavior: smooth;
+}
+
+/* Stili generali */
+body {
+    font-family: "Playfair Display", serif;
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+}
+* {
+    box-sizing: border-box; /* Impedisce che margini e padding aumentino la larghezza totale degli elementi */
+}
+
+
+
+
+/* Header */
+header {
+    position: relative;
+    text-align: center;
+    color: rgb(14, 125, 114);
+}
+
+.header-image-container {
+    position: relative;
+    width: 100%;
+    height: 100vh; /* L'immagine occupa tutta l'altezza dello schermo */
+    overflow: hidden;
+}
+
+.header-image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Mantiene l'immagine in modo che copra tutta l'area */
+}
+
+.header-text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+
+.header-text h1 {
+    margin: 0;
+    font-size: 10em; /* Dimensione del testo */
+    font-family: "Playfair Display", serif;
+    color: #ffffff;
+    text-shadow: 2px 2px 6px rgba(0, 0, 0, 0.6); /* Ombra leggera per migliorare il contrasto senza essere troppo aggressivo */
+}
+
+
+
+
+
+
+
+/* Navigazione */
+
+nav ul {
+    display: flex;
+    justify-content: center;
+    list-style-type: none;
+    padding: 10px;
+    margin: 0;
+    background-color: #0c4c3b;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); 
+}
+
+nav ul li {
+    margin: 0 10px;
+}
+
+nav ul li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 20px;
+    text-decoration: none;
+    transition: background-color 0.3s, color 0.3s;
+    border-radius: 5px;
+}
+
+nav ul li a:hover {
+    background-color: #205e26;
+    color: #fff;
+}
+
+
+
+section a {
+	color: rgb(3, 97, 78);
+	font-size: 30px;
+    text-align: center;  /* Aggiungi questa proprietà per centrare il testo */
+	display: block;  /* Rende il link un blocco per poter centrarlo */
+	margin: 0 auto;
+}
+section a:hover {
+	color: rgb(0, 255, 102);
+}
+
+
+
+/* Sezione "about" */
+.about-section {
+    padding: 30px 0px; 
+	margin: 0 auto;
+	width: 100%;
+    background-color: #fff; /* Sfondo bianco */
+    text-align: center;
+    font-family: "Playfair Display", serif;
+    margin-bottom: 40px; /* Maggiore distanza tra le sezioni */
+    box-sizing: border-box;
+
+}
+
+/* Container per il contenuto */
+.about-section .container {
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+
+/* Titolo della sezione */
+.about-section h2 {
+    margin-bottom: 20px; /* Spazio sotto il titolo */
+    font-size: 2.5em;
+    color: #0c4c3b; /* Verde scuro per il titolo */
+    font-weight: 600; /* Maggiore enfasi sul titolo */
+    padding: 0.2em; /* Corretto: aggiungi un piccolo padding sopra e sotto */
+}
+
+
+/* Paragrafo della sezione */
+.about-section p {
+    font-size: 1.15em; /* Font size per il testo */
+    line-height: 1.8; /* Spaziatura tra le righe */
+    color: #333; /* Colore testo scuro per il paragrafo */
+    margin-bottom: 20px; /* Aggiungi spazio tra il paragrafo e gli altri elementi (unità di misura aggiunta) */
+    padding: 0 0px; /* Aggiungi un po' di padding laterale per il testo */
+    width: 100%; /* Assicura che il paragrafo occupi tutta la larghezza disponibile */
+    box-sizing: border-box; /* Includi padding e border nel calcolo della larghezza */
+}
+
+
+
+
+
+
+/* Stili per dispositivi mobili */
+@media (max-width: 768px) {
+    .about-section h2 {
+        font-size: 2.2em; /* Adatta la dimensione del titolo per dispositivi più piccoli */
+    }
+
+    .about-section p {
+        font-size: 1em; /* Riduci la dimensione del testo per una lettura migliore su mobile */
+    }
+
+    .about-section .container {
+        padding: 15px; /* Riduci il padding per schermi più piccoli */
+    }
+}
+
+
+
+
+
+
+/* Carosello */
+.carousel {
+    position: relative;
+    max-width: 500px;
+    margin: auto;
+    overflow: hidden;
+    border-radius: 40px;
+}
+
+.carousel-inner {
+    display: flex;
+    width: 500%;
+    animation: carousel-scroll 20s linear infinite;
+}
+
+.carousel-item {
+    flex: 0 0 20%;
+}
+
+.carousel-item img {
+    width: 100%;
+    height: auto;
+}
+
+.carousel-controls {
+    position: absolute;
+    top: 50%;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    transform: translateY(-50%);
+}
+
+@keyframes carousel-scroll {
+    0% {
+        transform: translateX(0);
+    }
+    100% {
+        transform: translateX(-80%);
+    }
+}
+
+
+
+
+
+/* Modulo di contatto */
+.contact-box {
+    width: 300px;
+    text-align: center;
+    margin: 30px auto;
+    padding: 20px;
+
+    
+   
+}
+
+.contact-box input[type="text"],
+.contact-box textarea {
+    width: 100%;
+    font-family: 'Playfair Display', serif;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 0.3px solid #000000;
+    border-radius: 5px;
+    box-sizing: border-box;
+}
+
+.contact-box textarea {
+    height: 100px;
+}
+
+.contact-box input[type="submit"] {
+    background-color: #027457;
+    color: #000000;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.contact-box input[type="submit"]:hover {
+    background-color: rgb(5, 188, 26);
+    color: rgb(0, 0, 0);
+}
+
+
+
+
+/* Media Queries per dispositivi mobili */
+
+@media (max-width: 1200px) {
+    /* Tablet */
+    .header-text h1 {
+        font-size: 3.5em;
+    }
+
+    nav ul {
+        flex-direction: column;
+    }
+
+    nav ul li {
+        margin: 10px 0;
+    }
+
+    nav ul li a {
+        padding: 10px 15px;
+    }
+}
+
+@media (max-width: 992px) {
+    /* Dispositivi con larghezza da 992px a 1199px (es. tablet orizzontale) */
+    .header-text h1 {
+        font-size: 3em;
+    }
+
+    nav ul {
+        flex-direction: column;
+    }
+
+    nav ul li {
+        margin: 8px 0;
+    }
+
+    .about-section h2 {
+        font-size: 2.2em;
+    }
+}
+
+@media (max-width: 768px) {
+    /* Smartphone */
+    .header-text h1 {
+        font-size: 5em;
+        padding: 20px;
+    }
+
+    .header-image-container {
+        height: 60vh; /* Altezza immagine su dispositivi mobili */
+    }
+
+    nav ul {
+        flex-direction: column;
+    }
+
+    nav ul li {
+        margin: 10px 0;
+    }
+
+    .carousel {
+        max-width: 100%;
+    }
+
+    .about-section h2 {
+        font-size: 2em;
+    }
+
+    .contact-box {
+        width: 50%;
+    }
+}
+
+@media (max-width: 480px) {
+    /* Smartphone molto piccoli */
+    .header-text h1 {
+        font-size: 3.5em;
+    }
+
+    nav ul li a {
+        padding: 8px 12px;
+    }
+
+    .about-section h2 {
+        font-size: 1.8em;
+    }
+
+    .carousel-item img {
+        width: 100%;
+        height: auto;
+    }
+
+    .contact-box {
+        width: 50%;
+    }
+}
+
+.maps {
+    display: flex;
+    justify-content: center; /* Centra orizzontalmente */
+    align-items: center; /* Centra verticalmente se necessario */
+    padding: 20px;
+    width: 80%;  /* Imposta la larghezza al 80% del viewport (o scegli la dimensione che ti piace) */
+    max-width: 1000px;  /* Imposta un limite massimo alla larghezza per schermi più grandi */
+    margin: 0 auto;  /* Centra il contenitore */
+}
+
+.maps iframe {
+    width: 100%; /* La mappa occuperà il 100% della larghezza del contenitore */
+    height: 500px; /* Imposta l'altezza che ti piace */
+    border: 0;
+}

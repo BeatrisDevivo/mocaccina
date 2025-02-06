@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Recensioni - Mocaccina</title>
+    <link rel="icon" href="Immagini_mocaccina/mug-hot_17506385.svg" type="image/webp">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+	<style>
+		@import url('https://fonts.googleapis.com/css2?family=Delius+Unicase:wght@400;700&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap');
+		</style>
+    <style>
+        .stars {
+            color: gold;
+            font-size: 1.5em;
+        }
+    </style>
+</head>
+<body style="font-family: 'Playfair Display', serif; margin: 0; padding: 0; background-color: #f4f4f4; color: #333;">
+
+    <!-- Header -->
+    <header style="background-color: #0c4c3b; padding: 20px; text-align: center; color: white;">
+        <h1 style="margin: 0; font-size: 3em;"><em>Recensioni dei Nostri Clienti</em></h1>
+        <a href="MOCACCINA.html" style="color: white; text-decoration: none; background-color: #4b8073; padding: 10px 20px; border-radius: 5px; display: inline-block; margin-top: 15px;">Torna alla Home</a>
+    </header>
+
+    <!-- Contenuto Recensioni -->
+    <main style="max-width: 800px; margin: 40px auto; padding: 20px;">
+
+        <!-- Recensione 1 -->
+        <div style="background-color: white; padding: 20px; margin-bottom: 20px; border-radius: 10px; box-shadow: 0 4px 8px rgba(0,0,0,0.1);">
+            <h2 style="margin: 0 0 10px; color: #0c4c3b;">Giulia R.</h2>
+            <p style="margin: 0 0 10px; font-style: italic;">"Un luogo accogliente con il miglior caffè della città! Atmosfera rilassante e personale super gentile."</p>
+            <div class="stars">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star-half-alt"></i>
+            </div>
+        </div>
+
+        <!-- Recensione 2 -->
+        <div style="background-color: white; padding: 20px; margin-bottom: 20px; border-radius: 10px; box-shadow: 0 4px 8px rgba(0,0,0,0.1);">
+            <h2 style="margin: 0 0 10px; color: #0c4c3b;">Marco B.</h2>
+            <p style="margin: 0 0 10px; font-style: italic;">"La pasticceria è deliziosa e fresca ogni giorno. Consiglio vivamente il cornetto speciale!"</p>
+            <div class="stars">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+            </div>
+        </div>
+
+        <!-- Recensione 3 -->
+        <div style="background-color: white; padding: 20px; margin-bottom: 20px; border-radius: 10px; box-shadow: 0 4px 8px rgba(0,0,0,0.1);">
+            <h2 style="margin: 0 0 10px; color: #0c4c3b;">Elena F.</h2>
+            <p style="margin: 0 0 10px; font-style: italic;">"Perfetto per una pausa durante la giornata! Adoro il loro ginseng."</p>
+            <div class="stars">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="far fa-star"></i>
+            </div>
+        </div>
+
+        <!-- Recensione 4 -->
+        <div style="background-color: white; padding: 20px; margin-bottom: 20px; border-radius: 10px; box-shadow: 0 4px 8px rgba(0,0,0,0.1);">
+            <h2 style="margin: 0 0 10px; color: #0c4c3b;">Luca M.</h2>
+            <p style="margin: 0 0 10px; font-style: italic;">"Ottimo servizio e caffè eccezionale. L'ambiente è sempre pulito e ordinato."</p>
+            <div class="stars">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+            </div>
+        </div>
+
+        <!-- Recensione 5 -->
+        <div style="background-color: white; padding: 20px; margin-bottom: 20px; border-radius: 10px; box-shadow: 0 4px 8px rgba(0,0,0,0.1);">
+            <h2 style="margin: 0 0 10px; color: #0c4c3b;">Sara V.</h2>
+            <p style="margin: 0 0 10px; font-style: italic;">"Adoro la varietà di tè offerti! Perfetto per un pomeriggio rilassante."</p>
+            <div class="stars">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star-half-alt"></i>
+                <i class="far fa-star"></i>
+            </div>
+        </div>
+		
+<!-- Form per Nuova Recensione -->
+<div class="review-form" style="background-color: #fff; padding: 40px; margin: 40px auto; border-radius: 15px; box-shadow: 0 6px 12px rgba(0,0,0,0.1); max-width: 600px; text-align: center;">
+	<h2 style="color: #0c4c3b; font-size: 2em; margin-bottom: 20px;">Lascia la tua Recensione</h2>
+	<form action="#" method="post">
+		<input type="text" name="name" placeholder="Il tuo nome" required style="width: 80%; padding: 15px; margin: 10px 0; border: 1px solid #ccc; border-radius: 10px; font-size: 1em;">
+		<textarea name="review" placeholder="Scrivi la tua recensione qui..." rows="5" required style="width: 80%; padding: 15px; margin: 10px 0; border: 1px solid #ccc; border-radius: 10px; font-size: 1em;"></textarea>
+		<button type="submit" style="background-color: #0c4c3b; color: white; border: none; padding: 12px 30px; border-radius: 10px; font-size: 1.1em; cursor: pointer; transition: background-color 0.3s ease;">Invia Recensione</button>
+	</form>
+</div>
+    </main>
+
+    <!-- Footer -->
+    <footer style="background-color: #0c4c3b; text-align: center; padding: 15px; color: white;">
+        <p style="margin: 0;">&copy; MOCACCINA 2024 - Tutti i diritti riservati</p>
+    </footer>
+
+</body>
+</html>
