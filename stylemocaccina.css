@@ -374,3 +374,19 @@ section a:hover {
     height: 500px; /* Imposta l'altezza che ti piace */
     border: 0;
 }
+
+
+
+footer {
+    background-color: #f8f8f8;  /* Colore di sfondo chiaro per il footer */
+    color: #000;  /* Colore del testo nero */
+    text-align: center;  /* Centra il testo */
+    padding: 20px 0;  /* Spaziatura interna */
+     font-family: "Playfair Display", serif;
+    font-style: italic;  /* Imposta il font in corsivo */
+}
+
+
+    margin: 0;  
+    font-size: 1rem;  /* Imposta la dimensione del font */
+}
