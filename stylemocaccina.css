@@ -396,18 +396,4 @@ footer {
 }
 
 
-/* Media Queries per dispositivi mobili (max-width: 768px) */
-@media screen and (max-width: 768px) {
-    footer {
-        padding: 15px 0;  /* Riduce un po' il padding per schermi piccoli */
-        font-size: 0.9rem;  /* Font più piccolo per mobile */
-    }
-}
 
-/* Media Queries per dispositivi molto piccoli (max-width: 480px) */
-@media screen and (max-width: 480px) {
-    footer {
-        font-size: 0.8rem;  /* Ancora più piccolo su schermi stretti */
-        padding: 10px 0;  /* Ancora meno padding */
-    }
-}
