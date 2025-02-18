@@ -11,103 +11,16 @@
 	<style>
 		@import url('https://fonts.googleapis.com/css2?family=Delius+Unicase:wght@400;700&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap');
 		</style>
-
-
-<div class="indietro">
-    <a href="index.html" class="menu">Torna indietro</a>
-</div>
-
-    <style>
-		
-		.indietro {
-    display: flex;
-    justify-content: flex-start; /* Allinea il contenuto a destra */
-}
-
-a {
-    color: #ffffff;
-    text-decoration: none;
-    font-size: 18px;
-    background-color: #4b8073;
-    padding: 10px 20px;
-    border-radius: 5px;
-}
-
-
-
-        body {
-            font-family: "Playfair Display", serif;
-            margin: 0;
-            padding: 0;
-            background-color: #0e6359;
-            color: #ffffff;
-        }
-        .menu-container {
-            padding: 40px 20px;
-            max-width: 800px;
-            margin: 0 auto;
-        }
-        h1, h2 {
-            text-align: center;
-            color: #ffffff;
-            margin-bottom: 20px;
-		font-style: italic;
-        }
-		header img {
-    margin-top: 5px;
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-}
-
-
-        .menu-section {
-            margin-bottom: 30px;
-        }
-        .menu-item {
-            display: flex;
-            justify-content: space-between;
-            padding: 10px 0;
-            border-bottom: 1px solid #ffffff;
-        }
-        .menu-item:last-child {
-            border-bottom: none;
-        }
-        .menu-item h3 {
-            margin: 0;
-            font-size: 1.2em;
-        }
-        .menu-item .price {
-            font-weight: bold;
-        }
-		.menu-sublist {
-    list-style-type: disc;
-    margin: 5px 20px;
-    padding: 0;
-    color: #ffffff;
-    font-size: 0.95em;
-}
-.menu-sublist li {
-    margin-bottom: 5px;
-}
-.menu-sublist ul{
-	width: fit-content;
-	text-align: center;
-	margin: 0 auto;
-}
- footerimg {
-align-items: center;
-
- }
-
-    </style>
 </head>
+
+
+
 <body>
-	<header>
+	<header id="menu">
 		<h1>Menù di Mocaccina</h1>
 	</header>
 	
-    <main class="menu-container">
+    <main id="menu" class="menu-container">
         <section class="menu-section">
             <h2>Caffetteria</h2>
             <div class="menu-item">
@@ -242,27 +155,25 @@ align-items: center;
 
 			<div class="menu-item">
                 <h3>Natural BOOM</h3>
-				<ul>
+				<ul class="menu-sublist">
 				<li>fior di sambuco e limone</li>
 				<li>zenzero e limone</li></ul>
                 <span class="price">€3.50</span>
             </div>
 
-
+<a href="index.html" class="bottone-magico">Torna indietro</a>
         </section>
     </main>
 </body>
 
+    
 
-<style>
-	p{
-		text-align: center;
-		font-family: Verdana, Geneva, Tahoma, sans-serif;
-	}
-</style>
-	
-<footer style="font-family: "Playfair Display", serif; text-align: center; padding: 15px; color: white;">
-   <em>     <p style="margin: 0;">&copy; MOCACCINA 2024 - Tutti i diritti riservati</p></em>
-    </footer>
-	
+
+
+<footer>&copy; MOCACCINA 2024 - Tutti i diritti riservati</footer>
 </html>
+
+
+
+
+
