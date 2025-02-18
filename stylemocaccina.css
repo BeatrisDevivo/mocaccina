@@ -48,6 +48,50 @@ a:hover {
     color: #ffea00;
 }
 
+@media (max-width: 1024px) { 
+    h1 {
+        font-size: 6vw;
+    }
+
+    h2 {
+        font-size: 2em;
+    }
+
+    p {
+        font-size: 1.1em;
+        padding: 0 15px;
+    }
+
+    a {
+        font-size: 1em;
+    }
+}
+
+@media (max-width: 768px) { 
+    h1 {
+        font-size: 5vw;
+    }
+
+    h2 {
+        font-size: 1.8em;
+    }
+
+    p {
+        font-size: 1em;
+        line-height: 1.5;
+        padding: 0 10px;
+    }
+
+    a {
+        font-size: 1em;
+    }
+}
+
+
+
+
+
+
 
 
 
@@ -98,82 +142,25 @@ nav ul li {
     margin: 0 10px;
 }
 
-
-
 @media (max-width: 1024px) {
-    h1 {
-        font-size: 2.5em;
-    }
-
-    h2 {
-        font-size: 2em;
-    }
-
-    h3 {
-        font-size: 1.8em;
-    }
-
-    p {
-        font-size: 1.1em;
-    }
-
     .header-image-container {
-        height: 70vh; 
+        height: 70vh;
     }
 
     .header-text h1 {
         font-size: 6vw;
     }
 
-    nav ul li {
-        margin: 0 25px; 
+    nav ul {
+        gap: 20px;
     }
 
-    nav ul li a {
-        padding: 18px 25px;
+    nav ul li {
+        margin: 0 15px;
     }
 }
 
-
-
-
 @media (max-width: 768px) {
-    h1 {
-        font-size: 2.2em;
-    }
-
-    h2 {
-        font-size: 1.8em;
-    }
-
-    h3 {
-        font-size: 1.6em;
-    }
-
-    p {
-        font-size: 1em;
-        line-height: 1.5;
-    }
-
-
-    nav ul {
-        flex-direction: column;
-        padding: 0px;
-    }
-
-    nav ul li {
-        width: 100%;
-        text-align: center;
-       
-    }
-
-    nav ul li a {
-        display: block;
-        padding: 12px;
-        width: 100%;
-    }
-
-
     .header-image-container {
         height: 60vh;
     }
@@ -181,26 +168,26 @@ nav ul li {
     .header-text h1 {
         font-size: 5vw;
     }
+
+    nav ul {
+        flex-direction: column;
+        padding: 0;
+        gap: 10px;
+    }
+
+    nav ul li {
+        width: 100%;
+        text-align: center;
+    }
+
+    nav ul li a {
+        display: block;
+        padding: 12px;
+        width: 100%;
+    }
 }
 
-
 @media (max-width: 480px) {
-    h1 {
-        font-size: 2em;
-    }
-
-    h2 {
-        font-size: 1.6em;
-    }
-
-    h3 {
-        font-size: 1.4em;
-    }
-
-    p {
-        font-size: 0.9em;
-    }
-
     .header-image-container {
         height: 50vh;
     }
@@ -208,7 +195,16 @@ nav ul li {
     .header-text h1 {
         font-size: 4.5vw;
     }
+
+    nav ul {
+        gap: 5px;
+    }
 }
+
+
+
+
+
 
 
 
@@ -447,8 +443,8 @@ section a:hover {
 }
 
 .social-icons img {
-    width: 60px;
-    height: 60px;
+    width: 50px;
+    height: 50px;
 }
 
 
@@ -518,6 +514,104 @@ section a:hover {
     color: #333;
 }
 
+@media (max-width: 1024px) {
+    .social-icons a {
+        width: 90px;
+        height: 90px;
+    }
+
+    .social-icons img {
+        width: 45px;
+        height: 45px;
+    }
+
+    .contact-box {
+        max-width: 600px;
+        padding: 25px;
+    }
+
+    .contact-box h2 {
+        font-size: 1.8em;
+    }
+
+    .contact-box p {
+        font-size: 1.1em;
+    }
+}
+
+@media (max-width: 768px) {
+    .social-icons {
+        gap: 0;
+    }
+
+    .social-icons a {
+        width: 80px;
+        height: 80px;
+    }
+
+    .social-icons img {
+        width: 40px;
+        height: 40px;
+    }
+
+    .contact-box {
+        max-width: 90%;
+        padding: 20px;
+    }
+
+    .contact-box h2 {
+        font-size: 1.6em;
+    }
+
+    .contact-box p {
+        font-size: 1em;
+    }
+}
+
+@media (max-width: 480px) {
+    .social-icons {
+        gap: -5px;
+    }
+
+    .social-icons a {
+        width: 70px;
+        height: 70px;
+    }
+
+    .social-icons img {
+        width: 35px;
+        height: 35px;
+    }
+
+    .contact-box {
+        max-width: 95%;
+        padding: 15px;
+    }
+
+    .contact-box h2 {
+        font-size: 1.4em;
+    }
+
+    .contact-box p {
+        font-size: 0.9em;
+    }
+
+    .contact-box input[type="text"],
+    .contact-box textarea {
+        font-size: 0.9em;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -537,6 +631,49 @@ section a:hover {
     font-size: 1.2em;
     margin-bottom: 20px;
 }
+@media (max-width: 1024px) {
+    #recensioni h2 {
+        font-size: 2.2em;
+    }
+
+    #recensioni p {
+        font-size: 1.1em;
+    }
+}
+
+@media (max-width: 768px) {
+    #recensioni {
+        padding: 40px 0;
+    }
+
+    #recensioni h2 {
+        font-size: 2em;
+    }
+
+    #recensioni p {
+        font-size: 1em;
+    }
+}
+
+@media (max-width: 480px) {
+    #recensioni {
+        padding: 30px 0;
+    }
+
+    #recensioni h2 {
+        font-size: 1.8em;
+    }
+
+    #recensioni p {
+        font-size: 0.9em;
+    }
+}
+
+
+
+
+
+
 
 .bottone-magico {
     display: inline-block;
