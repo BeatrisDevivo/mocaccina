@@ -21,18 +21,19 @@ h2 {
     text-align: center;
     color: #027457;
     padding: 10px;
+    font-size: 30px;
 }
 
 h1 {
     margin: 0;
-    font-size: 8vw;
+    font-size: 100px;
     font-family: "Playfair Display", serif;
     color: #ffffff;
     text-shadow: 2px 2px 6px rgba(0, 0, 0, 0.6);
 }
 p {
     font-family: "Playfair Display", serif;
-    font-size: 1.2em;
+    font-size: 16px;
     line-height: 1.6;
     text-align: center;
     color: #333;
@@ -41,7 +42,7 @@ p {
 
 a {
     font-family: "Playfair Display", serif;
-    font-size: 1.1em;
+    font-size: 16px;
     text-decoration: none;
     color: #ffffff;
 }
@@ -52,15 +53,15 @@ a:hover {
 
 @media (max-width: 1024px) { 
     h1 {
-        font-size: 20px;
+        font-size: 90px;
     }
 
     h2 {
-        font-size: 2em;
+        font-size: 20px;
     }
 
     p {
-        font-size: 1.1em;
+        font-size: 17.6px;
         padding: 0 15px;
     }
 
@@ -71,11 +72,11 @@ a:hover {
 
 @media (max-width: 768px) { 
     h1 {
-        font-size: 30px;
+        font-size: 50px;
     }
 
     h2 {
-        font-size: 1.8em;
+        font-size: 25px;
     }
 
     p {
@@ -150,7 +151,7 @@ nav ul li {
     }
 
     .header-text h1 {
-        font-size: 6vw;
+        font-size: 70px;
     }
 
     nav ul {
@@ -168,7 +169,7 @@ nav ul li {
     }
 
     .header-text h1 {
-        font-size: 5vw;
+        font-size: 60px;
     }
 
     nav ul {
@@ -256,10 +257,15 @@ section a:hover {
     box-sizing: border-box;
 }
 
+
+@media (max-width: 1024px) { 
+   #chisiamo h1 {
+        font-size: 90px;
+    }}
+
+
 @media (max-width: 768px) {
-    #chisiamo h2 {
-        font-size: 2.2em;
-    }
+  
 
     #chisiamo p {
         font-size: 1em;
@@ -271,10 +277,7 @@ section a:hover {
 }
 
 @media (max-width: 480px) {
-    #chisiamo h2 {
-        font-size: 1.8em;
-    }
-
+   
     #chisiamo p {
         font-size: 0.9em;
     }
