@@ -417,7 +417,8 @@ section a:hover {
 .social-icons {
     display: flex;
     justify-content: center;
-   gap:0 px;
+	gap: 10px;
+    align-items: center;
     margin-bottom: 20px;
 }
 
@@ -427,7 +428,7 @@ section a:hover {
     align-items: center;
     width: 100px;
     height: 100px;
-    background-color: white;
+    background-color: rgb(2, 116, 87);
     border-radius: 50%;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     transition: transform 0.3s ease, box-shadow 0.3s ease;
